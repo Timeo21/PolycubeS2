@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "polycubes2",
+  "version": "${version}",
+  "name": "PolycubeS2",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/polycubes2/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "net.tim.polycubes2.Polycubes2"
+    ]
+  },
+  "mixins": [
+    "polycubes2.mixins.json",
+    {
+      "config": "polycubes2.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
